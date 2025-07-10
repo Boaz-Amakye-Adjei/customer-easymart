@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { Card } from "./catalog/page";
 import { Hero } from "./components/hero";
 import Link from "next/link";
+import { IoIosStar } from "react-icons/io";
 
 export default function Home() {
   return (
@@ -151,6 +151,47 @@ export default function Home() {
     </section>
   );
 }
+
+function Card() {
+  return (
+    <div className="bg-gray-100 rounded-md w-full h-fit">
+      <div className="h-[180px] grid place-content-center">
+        <Image src="/soap.png" width={170} height={170} alt="Bread" />
+      </div>
+
+      <div className="p-3">
+        <div>
+          <h2>Organic Red Pepper</h2>
+        </div>
+
+        <div className="my-2 flex justify-between items-center w-full text-xs">
+          <p className="text-gray-400">1000gm</p>
+          <StarRating rating={3} />
+        </div>
+
+        <div className="flex items-center justify-between">
+          <h4 className="font-bold text-xl">GHc 50</h4>
+          <button className="text-white bg-green-950 rounded-full size-[34px]">
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+const StarRating = ({ rating }: { rating: number }) => {
+  return (
+    <div className="flex text-yellow-500">
+      {Array.from({ length: 5 }, (_, i) => (
+        <IoIosStar
+          key={i}
+          className={i < rating ? "opacity-100" : "opacity-30"}
+        />
+      ))}
+    </div>
+  );
+};
 
 type CatoryCardProps = {
   bgColor: string;

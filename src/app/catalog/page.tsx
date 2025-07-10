@@ -98,7 +98,7 @@ function Aside() {
   );
 }
 
-export function Card() {
+function Card() {
   return (
     <div className="bg-gray-100 rounded-md w-full h-fit">
       <div className="h-[180px] grid place-content-center">
@@ -127,7 +127,7 @@ export function Card() {
 }
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-export function Sort() {
+function Sort() {
   const data = ["All", "Price", "Preview", "Color", "Offer", "Brands"];
   return (
     <div className="hidden md:block ">
