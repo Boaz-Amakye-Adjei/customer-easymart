@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Card, Sort } from "./catalog/page";
+import { Card } from "./catalog/page";
 import { Hero } from "./components/hero";
 import Link from "next/link";
 
