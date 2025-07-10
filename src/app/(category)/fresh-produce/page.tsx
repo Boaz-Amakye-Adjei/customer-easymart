@@ -108,7 +108,7 @@ function Card() {
 }
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
-export function Sort() {
+function Sort() {
   const data = ["All", "Price", "Preview", "Color", "Offer", "Brands"];
   return (
     <article className="hidden md:block px-10 py-5 flex gap-3">
