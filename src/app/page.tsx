@@ -92,7 +92,7 @@ export default function Home() {
       </article>
 
       <section className="px-3.5 md:px-0 flex my-10 md:h-[300px] gap-8 flex-col md:flex-row">
-        <article className="md:w-1/2 bg-[#ffd8a1] min-h-[320px] md:min-h-fit p-8 text-[#073114] overflow-hidden rounded-2xl flex flex-col justify-center relative">
+        <article className="md:w-1/2 bg-[#ffd8a1] min-h-[320px] md:min-h-fit p-8 text-[#073114] overflow-hidden rounded-md md:rounded-2xl flex flex-col justify-center relative">
           <h5 className=" text-3xl font-bold">Everyday fresh &</h5>
           <h5 className="font-bold text-3xl">and clean with</h5>
           <h5 className="font-bold text-3xl">product</h5>

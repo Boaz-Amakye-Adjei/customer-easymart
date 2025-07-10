@@ -3,7 +3,7 @@ import { IoIosStar } from "react-icons/io";
 
 export function Hero() {
   return (
-    <article className="rounded-t-3xl md:rounded-lg bg-green-800 px-5 py-10 md:p-10 min-h-[420px] text-center md:text-start">
+    <article className="md:rounded-lg bg-green-800 px-5 py-10 md:p-10 min-h-[420px] text-center md:text-start">
       <div className="text-[#a0d35d]">
         <p className="mb-8 md:mb-4 text-sm">Fast Delivery Service</p>
         <h3 className="text-5xl mb-3 ">Fastest</h3>
